@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		function createDatabase(){
+			var dbObj = openDatabase("html", "1.0", "My database",2 * 1024 * 1024, onSuccessCreate());
+
+			dbObj.transaction(function (tx) {  
+           			 tx.executeSql('CREATE TABLE IF NOT EXISTS Employee_Table (id unique, Name, Location)');  
+        	});
+		}
+
+		function onSuccessCreate(){
+			alert("database is created")
+		}
+
+
+	</script>
+</head>
+<body>
+<input type="button" name="" onclick="createDatabase()" value="createDatabase">
+</body>
+</html>
+
+
+
+
+
+
