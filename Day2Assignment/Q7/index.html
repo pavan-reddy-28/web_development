@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table, td {
+  border: 0.5px solid black;
+  padding: 2px;
+}
+.flex-container {
+    display: flex;
+   
+  }
+  
+  .display>div {
+      width: auto;
+    background-color: #f1f1f1;
+   
+    text-align: center;
+    margin: 10px;
+    padding: 5px;
+    font-size: 30px;
+    height: 40px;
+  }
+  
+  .flex-container{
+   justify-content: center ;
+  }
+  .table-flex{
+    display: flex;
+  justify-content: center;
+  }
+</style>
+</head>
+<body>
+
+    <form >
+        <div style="width: 350px;">
+            <label style="float:left;" >Enter No of Rows:</label>
+            <input style="float :right;" type="number" id="rows" ><br><br>
+        </div>
+        <div style="width: 350px;">
+        <label style="float:left;" >Enter No of Cols:</label>
+        <input style="float :right;" type="number" id="cols" ><br><br>
+        </div>
+         <button type="button" onclick="myFunction()">Try it</button>
+      </form> 
+<div class="table-flex" >
+    <table id="table" >
+  
+    </table>
+</div>
+
+<br>
+
+
+<script>
+function myFunction() {
+  var table = document.getElementById("table");
+  let rows =parseInt(document.getElementById("rows").value);
+  let cols =parseInt(document.getElementById("cols").value);
+  
+  for(let i=0;i<rows;i++){
+      let row = table.insertRow(0);
+      for(let j=0;j<cols;j++){
+        let c= row.insertCell(0);
+        c.innerHTML="CELL - "+(j+1) ;
+      }
+  }
+ 
+}
+</script>
+
+</body>
+</html>

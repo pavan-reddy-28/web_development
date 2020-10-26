@@ -1,0 +1,34 @@
+.flex-container {
+    display: flex;
+   
+  }
+  
+  .display>div {
+    background-color: #f1f1f1;
+    width:100px;
+    text-align: center;
+    margin: 10px;
+    padding: 20px;
+    font-size: 30px;
+    height: 40px;
+  }
+  .heading>div{
+    width:100px;
+    text-align: center;
+    margin: 10px;
+    padding: 20px;
+    font-size: 20px;
+      
+  }
+  .flex-container{
+   justify-content: center ;
+  
+  }
+  .button{
+      justify-content:center;
+     
+  }
+  .btn{
+      width: 100px;
+      margin:10px;
+  }

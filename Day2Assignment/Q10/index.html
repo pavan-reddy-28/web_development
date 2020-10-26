@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>STOP WATCH</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+<div style="margin: 50px;">
+<div class="flex-container heading" >
+        <div >Hours</div> 
+        <div >Minutes</div> 
+        <div >Seconds</div> 
+        <div >Milli</div>
+</div>
+<div class="flex-container display" >
+  <div id="hours">00</div> 
+  <div id="minutes">00</div> 
+  <div id="seconds">00</div> 
+  <div id="milliSeconds">00</div> 
+</div>
+<div class="flex-container button" >
+    <button id="start" class="btn start" onclick="startButton()" >start</button>
+    <button id="stop" class="btn stop" onclick="stopButton()" disabled >stop</button>
+    <button id="pause" class="btn pause" onclick="pauseButton()" disabled >pause /play</button>  
+  </div>
+  
+</div>
+</body>
+<script src="scriptFile.js"></script>
+
+</html>
+
