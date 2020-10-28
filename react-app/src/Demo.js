@@ -1,11 +1,20 @@
 import React, { Component } from 'react'
 
-export class Demo extends Component {
-    render() {
-        return (
-            <div>
-                hello from demo.js
+export function Demo(){
 
+   
+
+const Welcome =(props)=><h1>hello {props.name}</h1>
+
+  {
+        return (
+          <div>
+            <Welcome name="pavan"/>
+            <div>
+       <div>
+
+         <input type="text" id="empId" /> <button onclick={()=>{}}>get details </button>
+       </div>
                 <table >
   <tr>
     <th>Firstname</th>
@@ -24,8 +33,13 @@ export class Demo extends Component {
   </tr>
 </table>
             </div>
+            </div>
         )
     }
 }
+
+
+
+
 
 export default Demo

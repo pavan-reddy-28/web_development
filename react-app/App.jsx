@@ -1,11 +1,17 @@
 
 import React from "react"
-import Demo from './src/Demo'
+// import Greetings from './DAY5/Greetings'
+import Counter from './DAY5/Counter'
+import UserInput from "./DAY5/UserInput"
 class App extends React.Component{
     render(){
         return(
-            <div> WElcome to react app 
-               <Demo/>
+            <div> 
+               {/* <Greetings/> */}
+               {/* <Counter/> */}
+
+            <UserInput/>
+
             </div>
         );
     }
